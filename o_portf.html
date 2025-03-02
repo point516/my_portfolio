@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        p {
+            margin:0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: calc(20% - 20px);
+            height: 200px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .info {
+            text-decoration: none;
+            height: 100%; 
+            color: #333;
+            font-weight: bold;
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; */
+        }
+        .project h2 {
+            height: 20%;
+            margin: 0;
+            font-size: 18px;
+            /* margin-top: 10px; */
+        }
+        .stack {
+            color: #8A2BE2;
+            height: 25%;
+            margin: 20px 0 0 0;
+            font-size: 12px;
+        }
+
+        .description {
+            height: 55%;
+            margin: 15px 0 0 0; 
+            font-size: 14px;
+            color: #666;
+        }
+
+        .links {
+            font-size: 14px;
+        }
+
+        .links a{
+            display: inline-block; /* Necessary for proper padding and border */
+            color: #0066cc; /* Bright blue for high contrast */
+            text-decoration: none; /* No underline by default */
+            padding: 1px 1px; 
+            border-bottom : 2px solid #0066cc; /* Solid border matching the text color */
+            transition: all 0.3s ease; /* Smooth transitions for hover effects */
+            cursor: pointer; /* Pointer cursor to indicate clickability */
+            margin-left: 5px;
+        }
+        
+        .links a:hover {
+            border-color: #8A2BE2; /* Darker border color on hover/focus */
+            text-decoration: none; /* Maintain no underline on hover */
+            color: #8A2BE2; /* Darker text color to match the border */
+        }
+
+        .links a:focus {
+            background-color: #e6f0ff; /* Light blue background on hover/focus */
+            border-color: #8A2BE2; /* Darker border color on hover/focus */
+            text-decoration: none; /* Maintain no underline on hover */
+            color: #8A2BE2; /* Darker text color to match the border */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>&#x1F64C;Welcome to My Portfolio</h1>
+        <p>Hi&#x1F44B;, I'm Abylay. Here is the a structured view on things I did or am doing or tried to do or trying to do. Some deployed, some on github.</p>
+    </header>
+    <div class="projects">
+        <div class="project">
+            <div class="info">
+                <h2>Esports Outcome Predictor</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack"> Python, Selenium, Sklearn, XGBoost, CatBoost, LightGBM, PostgreSQL, SHAP, Pandas, Matplotlib, Seaborn, FastAPI</p>
+                <p class="description">End-to-end ML project to predict the outcomes of professional CS2 matches. </p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/cs_bot">Github</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Web Query Chatbot</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack"> Python, OpenAI API, ChatGPT4o-mini, Docker, LlangChain, Telegram Chatbot</p>
+                <p class="description"> A project I made for fun with OpenAI API to query the web with gpt4o-mini.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/llm_webQuery">Github</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Hackathon: Fire Detection contest</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack"> Python, Tensorflow, Keras</p>
+                <p class="description"> Second place at Hackathon. Identifying fire on images.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/SST-Hackathon">Github</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Computer Vision Tasks</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack">Pytorch, HuggingFace Transformers, HuggingFace Datasets, HuggingFace Metrics</p>
+                <p class="description">Solving various Computer Vision tasks. Mainly for practice or testing some ideas and being up-to-date.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/cv_grind">Github</a>
+                <!-- <a href=""></a> -->
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>NLP Tasks</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack">Pytorch, Tensorflow, NLTK, HuggingFace Transformers</p>
+                <p class="description">Solving various NLP tasks.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/nlp_grind">Github</a>
+                <!-- <a href=""></a> -->
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Tensorflow Practice</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack">Tensorflow, Keras </p>
+                <p class="description">Some exercises I am doing while practicing Tensorflow/Keras</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/tensorflow">Github</a>
+                <!-- <a href=""></a> -->
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Esports Outcome Predictor v2.0</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack"> Python, Selenium, Sklearn, XGBoost, CatBoost, LightGBM, PostgreSQL</p>
+                <p class="description"> Another Dataset - Same task.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/hope">Github</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Practice Statistics with Python</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack"> Python, Scipy, Statsmodels</p>
+                <p class="description">Some Statistics with Python.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/practice/blob/main/stats.ipynb">Github</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Data Visualizations with Python</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack"> Python, Matplotlib, Seaborn</p>
+                <p class="description"> Some Data Visualizations with Python.</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/practice/blob/main/vis.ipynb">Github</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="info">
+                <h2>Kaggle Spaceship Titanic</h2>
+                <!-- <h2>Project 1</h2> -->
+                <p class="stack">Python, Sklearn, XGBoost, CatBoost, LightGBM, Optuna, Matplotlib, Seaborn</p>
+                <p class="description">Got top5% submission. Focused on ensemble methods: stacking, blending, voting, ranking</p>
+            </div>
+            <div class="links">
+                <a href="https://github.com/point516/Kaggle">Github</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
